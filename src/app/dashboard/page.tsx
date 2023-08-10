@@ -45,6 +45,7 @@ export default function Page() {
 
   const btnOpen = () => {
     TweenMax.to([weddingText, containerName, btnWedding, imageFlower, assText], .8, { opacity: 0, y: 0, ease: Power3.easeOut })
+    // sound.play();
     nav.push('/profile')
   }
 
