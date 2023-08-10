@@ -32,7 +32,7 @@ export default function Page() {
         <div className={classnames('mr-[0px]')}>
           <Image src={Prima} width={100} alt="prima" />
         </div>
-        <div className='absolute right-[150px] top-[42px]'>
+        <div className='absolute right-[140px] top-[42px]'>
           <p className={classnames('font-dancing text-[#965A00] text-[24px]')}>Prima Dharossa, S.H.</p>
           <p className={classnames('text-[#965A00] text-[14px] text-[#000000] leading-[17px] font-montaga')}>Putra sulung dari
             Bpk.
