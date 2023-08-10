@@ -2,8 +2,8 @@
 import React from 'react'
 import classnames from 'classnames'
 import Image from 'next/image';
-import Prima from '../../../public/Prima.png'
-import Yulia from '../../../public/Yulia.png'
+import Prima from '@/public/prima.png'
+import Yulia from '@/public/yulia.png'
 import { TweenMax, Power3 } from 'gsap'
 
 

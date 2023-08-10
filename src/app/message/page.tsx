@@ -2,9 +2,9 @@
 import React, {FormEvent, useState} from 'react'
 import classnames from 'classnames'
 import Image from 'next/image';
-import flower3 from '../../../public/flower3.png'
+import flower from '../../../public/flower-small.png'
 import { TweenMax, Power3 } from 'gsap'
-import BG2 from '../../../public/bg-message-small.png'
+import BG2 from '@/public/bg-message.png'
 import {Howl, Howler} from 'howler'
 
 
@@ -70,12 +70,12 @@ export default function Page() {
         <form onSubmit={submitForm}>
         <div className={classnames('bg-[#6EA5B1] pb-[50px] rounded-md flex flex-col font-caladea pt-[16px] px-[23px]')} style={{ boxShadow: '2px 4px 4px rgba(0, 0, 0, 0.25)' }}>
           <div className={classnames('flex flex-col items-center')}>
-            <h1 className={classnames('p-0 m-0 font-caladea text-[#EA9933] text-[24px]')}>PRIMA</h1>
-            <h1 className={classnames('p-0 m-0 font-caladea text-[#EA9933] text-[24px]')}>&</h1>
-            <h1 className={classnames('p-0 m-0 font-caladea text-[#EA9933] text-[24px]')}>YULIA</h1>
+            <h1 className={classnames('p-0 m-0 font-caladea text-[#FFFFFF] text-[24px]')}>PRIMA</h1>
+            <h1 className={classnames('p-0 m-0 font-caladea text-[#FFFFFF] text-[24px]')}>&</h1>
+            <h1 className={classnames('p-0 m-0 font-caladea text-[#FFFFFF] text-[24px]')}>YULIA</h1>
             <Image
               alt='Mountains'
-              src={flower3}
+              src={flower}
               width={166}
             />
             <p className={classnames('font-caladea text-[14px] text-[#FFFFFF]')}>Kehadiranmu sangat berharga bagi kami</p>

@@ -3,7 +3,7 @@ import React from 'react'
 import Link from 'next/link'
 import classnames from 'classnames'
 import Message from '../../../public/message.png'
-import Location from '../../../public/location.png'
+import Location from '@/public/location.png'
 import User from '../../../public/user.png'
 import Image from 'next/image'
 import { TweenMax, Power3 } from 'gsap'
@@ -18,10 +18,10 @@ export const Footer = () => {
     }, [])
 
     return (
-        <div className={classnames('h-[65px] px-[8px] absolute bottom-0 left-0 right-0 opacity-0')} style={{ boxShadow: '6px -10px 13px -11px rgba(0, 0, 0, 0.25)' }} ref={item => { weddingText = item }}>
+        <div className={classnames('h-[65px] px-[8px]  absolute bottom-0 bg-[#6EA5B1] left-0 right-0 opacity-0')} style={{ boxShadow: '6px -10px 13px -11px rgba(0, 0, 0, 0.5)' }} ref={item => { weddingText = item }}>
             <div className='flex justify-between px-[24px] py-[12px]'>
                 <div className='containerFooter'>
-                <div className={classnames('containerFooter flex cursor-pointer flex-col items-center')}>
+                <div className={classnames('containerFooter flex cursor-pointer flex-col items-center text-white')}>
                             <Image src={User} width={25} height={25} alt="user" />
 
                             <p>Profile</p>
@@ -29,7 +29,7 @@ export const Footer = () => {
                 </div>
                 <div className='containerFooter'>
                     <Link href="/location" as="/location" passHref>
-                        <div className={classnames('containerFooter flex cursor-pointer flex-col items-center')}>
+                        <div className={classnames('containerFooter flex cursor-pointer flex-col items-center text-white')}>
                             <Image src={Location} width={25} height={25} alt="Location" />
 
                             <p>Location</p>
@@ -38,7 +38,7 @@ export const Footer = () => {
                 </div>
                 <div className='containerFooter '>
                     <Link href="/message" as="/message" passHref>
-                        <div className={classnames('containerFooter flex cursor-pointer flex-col items-center')}>
+                        <div className={classnames('containerFooter flex cursor-pointer flex-col items-center text-white')}>
                         <Image src={Message} width={25} height={25} alt="Message" />
                             <p className={classnames('mt-2')}>Message</p>
                         </div>
