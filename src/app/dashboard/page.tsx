@@ -23,7 +23,7 @@ export default function Page() {
 
 
   var sound = new Howl({
-    src: ['./Forever.mp3'],
+    src: ['./forever.mp3'],
     autoplay: true,
     loop:true,
     onplayerror: function() {

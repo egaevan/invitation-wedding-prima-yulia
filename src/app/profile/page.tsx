@@ -27,14 +27,12 @@ export default function Page() {
       <div className={classnames('flex flex-col text-center items-center justify-center ')}>
         <p className={classnames('text-[16px] max-w-[355px] leading-[100%] tracking-[.1em] font-dancing opacity-0')} ref={item => { textTitle = item }}>Bismillahirrahmanirrahiim
           <br /><br /><span >Dengan memohon rahmat dan ridho Allah SWT, kami bermaksud menyelenggarakan Akad Nikah & Resepsi Pernikahan putra-putri kami,</span></p>
-        {/*<p className={classnames('text-[14px] max-w-[355px] leading-[100%] tracking-[.1em] font-dancing opacity-0')} ref={item => { textTitle = item }}>“Dan di antara tanda-tanda kekuasaan Allah ialah diciptakan-Nya untukmu pasangan hidup dari jenismu sendiri supaya kamu merasa tentram di samping-Nya dan dijadikan-Nya rasa kasih sayang di antara kamu. Sesungguhnya yang demikian itu menjadi bukti kekuasaan Allah bagi kaum yang berfikir.“*/}
-        {/*  <br /><br /><span >(QS. Ar- Rum 21)</span></p>*/}
       </div>
       <div className='flex justify-end relative z-99 mt-3 opacity-0' ref={item => { textPrima = item }}>
-        <div className={classnames('mr-[-20px]')}>
-          <Image src={Prima} width={230} alt="prima" />
+        <div className={classnames('mr-[0px]')}>
+          <Image src={Prima} width={100} alt="prima" />
         </div>
-        <div className='absolute left-0 top-[42px]'>
+        <div className='absolute right-[150px] top-[42px]'>
           <p className={classnames('font-dancing text-[#965A00] text-[24px]')}>Prima Dharossa, S.H.</p>
           <p className={classnames('text-[#965A00] text-[14px] text-[#000000] leading-[17px] font-montaga')}>Putra sulung dari
             Bpk.
@@ -43,10 +41,10 @@ export default function Page() {
         </div>
       </div>
       <div className='relative mt-[-100px] z-2 opacity-0' ref={item => { textYulia = item }}>
-        <div className={classnames('ml-[-35px] z-99')}>
-        <Image src={Yulia} width={230} alt="yulia" />
+        <div className={classnames('ml-[0px] z-99')}>
+        <Image src={Yulia} width={100} alt="yulia" />
         </div>
-        <div className='absolute flex left-[200px] top-[133px]'>
+        <div className='absolute flex left-[130px] top-[133px]'>
           <div className={classnames('flex flex-col')}>
             <p className={classnames('font-dancing text-[#965A00] text-[24px]')}>Yulia Sari, S.Kom.</p>
             <p className={classnames('text-[#965A00] text-[14px] text-[#000000] leading-[17px] font-montaga')}>Putri bungsu dari Bpk.
