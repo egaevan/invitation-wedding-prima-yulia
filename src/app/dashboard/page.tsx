@@ -3,7 +3,7 @@ import React from 'react'
 import classnames from 'classnames'
 import Image from 'next/image';
 import Flower from '../../../public/flower-ok.png'
-import Ring from '../../../public/bird.png'
+import Bird from '../../../public/bird.png'
 import { useRouter, useSearchParams } from 'next/navigation';
 import { TweenMax, Power3 } from 'gsap'
 import {Howl, Howler} from 'howler'
@@ -23,7 +23,7 @@ export default function Page() {
 
 
   var sound = new Howl({
-    src: ['./Akad.mp3'],
+    src: ['./forever.mp3'],
     autoplay: true,
     loop:true,
     onplayerror: function() {
@@ -32,12 +32,14 @@ export default function Page() {
       });
     }
   });
+
+
   React.useEffect(() => {
     TweenMax.to(weddingText, .8, { opacity: 1, y: -20, ease: Power3.easeOut })
     TweenMax.to(assText, .8, { opacity: 1, y: -40, delay: .3, ease: Power3.easeOut })
     TweenMax.to(containerName, .8, { opacity: 1, y: -20, delay: .3, ease: Power3.easeOut })
     TweenMax.to(btnWedding, .8, { opacity: 1, y: -20, delay: .5, ease: Power3.easeOut })
-    sound.play();
+    // sound.play();
 
   }, [])
 
@@ -58,7 +60,7 @@ export default function Page() {
             <div className={classnames('absolute flex flex-col top-[150px] left-0 right-0 ml-auto mr-auto text-center opacity-0')} ref={item2 => { containerName = item2 }}>
               <h1 className={classnames('text-title text-[40px] leading-[200%] tracking-[0.3em]')}>PRIMA</h1>
               <div className={classnames('w-[100px] h-[40px] text-center flex items-center justify-center ml-auto mr-auto')}>
-                <Image src={Ring} alt="ring-image" />
+                <Image src={Bird} alt="ring-image" />
               </div>
               <h1 className={classnames('text-title text-[40px] leading-[150%] tracking-[0.3em]')}>YULIA</h1>
             </div>
