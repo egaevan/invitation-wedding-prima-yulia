@@ -68,30 +68,30 @@ export default function Page() {
 
       <div className={classnames('mt-[80px] px-[40px] opacity-0')} ref={item => { containerBorder = item }}>
         <form onSubmit={submitForm}>
-        <div className={classnames('bg-[#FEDFE3] pb-[50px] rounded-md flex flex-col font-caladea pt-[16px] px-[23px]')} style={{ boxShadow: '2px 4px 4px rgba(0, 0, 0, 0.25)' }}>
+        <div className={classnames('bg-[#6EA5B1] pb-[50px] rounded-md flex flex-col font-caladea pt-[16px] px-[23px]')} style={{ boxShadow: '2px 4px 4px rgba(0, 0, 0, 0.25)' }}>
           <div className={classnames('flex flex-col items-center')}>
-            <h1 className={classnames('p-0 m-0 font-caladea text-[#965A00] text-[24px]')}>ICA</h1>
-            <h1 className={classnames('p-0 m-0 font-caladea text-[#965A00] text-[24px]')}>&</h1>
-            <h1 className={classnames('p-0 m-0 font-caladea text-[#965A00] text-[24px]')}>EGA</h1>
+            <h1 className={classnames('p-0 m-0 font-caladea text-[#EA9933] text-[24px]')}>PRIMA</h1>
+            <h1 className={classnames('p-0 m-0 font-caladea text-[#EA9933] text-[24px]')}>&</h1>
+            <h1 className={classnames('p-0 m-0 font-caladea text-[#EA9933] text-[24px]')}>YULIA</h1>
             <Image
               alt='Mountains'
               src={flower3}
               width={166}
             />
-            <p className={classnames('font-caladea text-[14px]')}>Kehadiranmu sangat berharga bagi kami</p>
+            <p className={classnames('font-caladea text-[14px] text-[#FFFFFF]')}>Kehadiranmu sangat berharga bagi kami</p>
           </div>
           <div className={classnames('flex items-start flex-col mt-[19px] relative w-screen')}>
-            <p className={classnames(' text-[14px]')}>Nama</p>
+            <p className={classnames(' text-[14px] text-[#FFFFFF]')}>Nama</p>
             {/*<input onChange={(e) => {onChangeData('nama',e.target.value)}} className={classnames('py-[5px] text-[14px] px-[16px] rounded-md border border-[#B4B4BB] mt-[8px] w-[77vw] md:w-[301px] lg:w-[301px]')} placeholder="Nama"/>*/}
             <input value={nama} onChange={e=>setNama(e.target.value)} className={classnames('py-[5px] text-[14px] px-[16px] rounded-md border border-[#B4B4BB] mt-[8px] w-[77vw] md:w-[301px] lg:w-[301px]')} placeholder="Nama"/>
           </div>
           <div className={classnames('flex items-start flex-col mt-[19px] relative w-screen')}>
-            <p className={classnames(' text-[14px]')}>Ucapan</p>
+            <p className={classnames(' text-[14px] text-[#FFFFFF]')}>Ucapan</p>
             {/*<textarea onChange={(e) => {onChangeData('ucapan',e.target.value)}}  className={classnames('py-[5px] text-[14px] px-[16px] h-[125px] rounded-md border border-[#B4B4BB] mt-[8px] w-[77vw] md:w-[301px] lg:w-[301px]')} placeholder="Selamat atas pernikahannya"></textarea>*/}
             <textarea value={ucapan} onChange={e=>setUcapan(e.target.value)} className={classnames('py-[5px] text-[14px] px-[16px] h-[125px] rounded-md border border-[#B4B4BB] mt-[8px] w-[77vw] md:w-[301px] lg:w-[301px]')} placeholder="Selamat atas pernikahannya"></textarea>
           </div>
           <button type="submit"
-              className={classnames('py-[14px] w-[77vw] md:w-[301px] lg:w-[301px] mt-[42px] rounded-md relative bg-[#D49494] text-white opacity-1 hover:bg-[#e8aeae]')} >
+              className={classnames('py-[14px] w-[77vw] md:w-[301px] lg:w-[301px] mt-[42px] rounded-md relative bg-[#C1781D] text-white opacity-1 hover:bg-[#EA9933]')} >
           Kirim
           </button>
         </div>

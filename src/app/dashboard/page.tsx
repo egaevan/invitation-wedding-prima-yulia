@@ -23,7 +23,7 @@ export default function Page() {
 
 
   var sound = new Howl({
-    src: ['./Akad.mp3'],
+    src: ['./Forever.mp3'],
     autoplay: true,
     loop:true,
     onplayerror: function() {
@@ -56,17 +56,17 @@ export default function Page() {
           <div className={classnames('w-[350px] h-[418px] relative mt-[1em]')}>
             <Image src={Flower} object-fit="fill" alt="flower-image" ref={item2 => { imageFlower = item2 }} />
             <div className={classnames('absolute flex flex-col top-[150px] left-0 right-0 ml-auto mr-auto text-center opacity-0')} ref={item2 => { containerName = item2 }}>
-              <h1 className={classnames('text-title text-[40px] leading-[150%] tracking-[0.3em]')}>ICA</h1>
+              <h1 className={classnames('text-title text-[40px] leading-[150%] tracking-[0.3em]')}>PRIMA</h1>
               <div className={classnames('w-[39px] h-[43px] text-center flex items-center justify-center ml-auto mr-auto')}>
                 <Image src={Ring} object-fit='fill' alt="ring-image" />
               </div>
-              <h1 className={classnames('text-title text-[40px] leading-[150%] tracking-[0.3em]')}>EGA</h1>
+              <h1 className={classnames('text-title text-[40px] leading-[150%] tracking-[0.3em]')}>YULIA</h1>
             </div>
           </div>
          <center> <p className={classnames('text-primary opacity-0 mt-[82px]' )} ref={item => { assText = item }}>Kpd. Bpk/Ibu/Saudara/i
           <br/>{to}</p>
          </center>
-          <button className={classnames('py-[14px] min-w-[350px] mt-[0px] rounded-md relative bg-[#D49494] text-white opacity-0 hover:bg-[#e8aeae]')} onClick={() => { btnOpen() }} ref={item3 => { btnWedding = item3 }}>
+          <button className={classnames('py-[14px] min-w-[350px] mt-[0px] rounded-md relative bg-[#C1781D] text-white opacity-0 hover:bg-[#EA9933]')} onClick={() => { btnOpen() }} ref={item3 => { btnWedding = item3 }}>
             BUKA UNDANGAN
           </button>
         </div>
