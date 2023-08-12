@@ -10,7 +10,6 @@ import Time from '../../../public/time.png'
 import Place from '../../../public/location.png'
 import Cincin from '@/public/ring.png'
 import Cheers from '@/public/cheers.png'
-import {useRouter} from "next/navigation";
 
 export default function Page() {
   let containerImage: any = React.useRef(null)
@@ -18,8 +17,6 @@ export default function Page() {
   let containerBorder: any = React.useRef(null)
   let containerBorder2: any = React.useRef(null)
   let textTitle: any = React.useRef(null)
-  let btnMapsAkad: any = React.useRef(null)
-  const router = useRouter()
 
 
   React.useEffect(() => {
@@ -28,11 +25,6 @@ export default function Page() {
     TweenMax.to(containerBorder2, .8, { opacity: 1, delay: 1, ease: Power3.easeOut })
     TweenMax.to(textTitle, .8, { opacity: 1, ease: Power3.easeOut })
   }, [])
-
-  const btnOpen = () => {
-    return "https://goo.gl/maps/HrRy93wF767hev2r9"
-    router.push('/location')
-  }
 
   return (
     <div className={classnames('max-h-[calc(100vh-220px)]  md:max-h-[calc(100vh-130px)] lg:max-h-[calc(100vh-130px)] overflow-x-hidden overflow-y-auto ')}>

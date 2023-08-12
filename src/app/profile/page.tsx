@@ -12,7 +12,6 @@ export default function Page() {
   let textTitle : any = React.useRef(null)
   let textPrima : any = React.useRef(null)
   let textYulia : any = React.useRef(null)
-  const [play, setPlay] = React.useState(true)
 
   React.useEffect(() => {
     TweenMax.to(containerBorder, .8, { opacity: 1, ease: Power3.easeOut })

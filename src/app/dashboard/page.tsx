@@ -39,13 +39,12 @@ export default function Page() {
     TweenMax.to(assText, .8, { opacity: 1, y: -40, delay: .3, ease: Power3.easeOut })
     TweenMax.to(containerName, .8, { opacity: 1, y: -20, delay: .3, ease: Power3.easeOut })
     TweenMax.to(btnWedding, .8, { opacity: 1, y: -20, delay: .5, ease: Power3.easeOut })
-    // sound.play();
+    sound.play();
 
   }, [])
 
   const btnOpen = () => {
     TweenMax.to([weddingText, containerName, btnWedding, imageFlower, assText], .8, { opacity: 0, y: 0, ease: Power3.easeOut })
-    // sound.play();
     nav.push('/profile')
   }
 
