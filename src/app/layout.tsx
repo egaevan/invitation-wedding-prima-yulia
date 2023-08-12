@@ -6,8 +6,6 @@ import {Howl, Howler} from 'howler'
 export default function RootLayout({ children }: {
   children: React.ReactNode;
 }) {
-  const [play, setPlay] = React.useState(false)
- 
   return (
     <html lang="en">
       <link rel="shortcut icon" href='/cincin.png'></link>
