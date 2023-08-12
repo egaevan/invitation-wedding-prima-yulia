@@ -32,8 +32,6 @@ export default function Page() {
       });
     }
   });
-
-
   React.useEffect(() => {
     TweenMax.to(weddingText, .8, { opacity: 1, y: -20, ease: Power3.easeOut })
     TweenMax.to(assText, .8, { opacity: 1, y: -40, delay: .3, ease: Power3.easeOut })

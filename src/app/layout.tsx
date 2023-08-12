@@ -8,7 +8,7 @@ export default function RootLayout({ children }: {
 }) {
   return (
     <html lang="en">
-      <link rel="shortcut icon" href='/cincin.png'></link>
+      <link rel="shortcut icon" href='/ring.png'></link>
       <title>Wedding Prima ♥ Yulia</title>
       <meta name="viewport" content="width=device-width, initial-scale=1.0, height=device-height, maximum-scale=1.0, user-scalable=no" />
       <body>
